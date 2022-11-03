@@ -14,6 +14,8 @@ Steps For Assignment-1
 10. Commit the changes and push the changes to git repository using "git commit" and "git push" commands.
 
 11. For Sample output check below
+Following line suggests start of module "CMPE 283 Assignment 1 Module Start"
+Following line suggests end of module "CMPE 283 Assignment 1 Module Exits"
  
 12. <img width="468" alt="image" src="https://user-images.githubusercontent.com/99615170/199652543-666566c2-7938-4844-bca0-d1228dbdb084.png">
  
