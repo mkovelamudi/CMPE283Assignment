@@ -20,4 +20,4 @@ Following line suggests end of module "CMPE 283 Assignment 1 Module Exits"
 12. <img width="468" alt="image" src="https://user-images.githubusercontent.com/99615170/199652543-666566c2-7938-4844-bca0-d1228dbdb084.png">
  
 # Note
-Tertiary Processor Based controls cannot be added, as the Can Set Flag is False in primary processor controls.
+Tertiary Processor Based controls cannot be added, as the Can Set Flag is No in primary processor controls.
