@@ -32,11 +32,13 @@
 u32 kvm_cpu_caps[NR_KVM_CPU_CAPS] __read_mostly;
 EXPORT_SYMBOL_GPL(kvm_cpu_caps);
 
-//Assignment 2
+//Assignment 2 variables
 atomic64_t exit_counters = ATOMIC64_INIT(0);
 EXPORT_SYMBOL(exit_counters);
 atomic64_t exit_duration = ATOMIC64_INIT(0);
 EXPORT_SYMBOL(exit_duration);
+//Assignment 2 Variables end
+
 
 static u32 xstate_required_size(u64 xstate_bv, bool compacted)
 {
@@ -1237,6 +1239,8 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 
 	eax = kvm_rax_read(vcpu);
 	ecx = kvm_rcx_read(vcpu);
+	
+	//Assignment 2 Implementation
 	if(eax==0x4ffffffc){
 	
 		//kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, true);
@@ -1244,17 +1248,16 @@ int kvm_emulate_cpuid(struct kvm_vcpu *vcpu)
 		printk("eax is 0x4ffffffc \n Total exits eax=%u",eax); 
 	}
 	else if(eax==0x4ffffffd){
-		//kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, true);
-				
+
+		//kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, true);		
 		ebx = ((atomic64_read(&exit_duration)>>32));
 		printk("eax = 0x4FFFFFFd \n Total time spent processing all exits in ebx[high 32 bits] = %u", ebx);
-			
 		ecx = (atomic64_read(&exit_duration) & 0xffffffff);
 		printk("eax = 0x4ffffffd \n Total time spent processing all exits in ecx[low 32 bits] = %u", ecx);
-		
 		printk("eax = 0x4ffffffd \n Total Cycles spent in exit = %llu", atomic64_read(&exit_duration));
 	
 	}
+	//Assigment 2 End
 	else{
 	kvm_cpuid(vcpu, &eax, &ebx, &ecx, &edx, false);
 	}
