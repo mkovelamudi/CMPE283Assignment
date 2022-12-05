@@ -39,20 +39,23 @@ Tertiary Processor Based controls cannot be added, as the Can Set Flag is No in 
 12. After above step, fire command "sudo make INSTALL_MOD_STRIP=1 modules_install".
 13. After above step, fire "uname -a" to check the version of kernel.
 14. Reboot VM using "sudo reboot"
-15. After reboot check kernel version using "uname -a", the kernel version is updated in my case 5.14.3.
-16. Install virtual manager using command "sudo apt-get install virt-manager".
-17. I have setup Desktop for GCP instance, follow link to install Desktop server https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine
-18. After installation connect to instance using chrome remote desktop https://remotedesktop.google.com/access/
-19. Download an ubunut ISO file from website, I downloaded ubuntu 20.04 ISO file
-20. Open Virtual Machine Manager.
-21. Create VM using downloaded ISO file.
-22. After creating VM, boot into VM.
-23. Install CPUID package using "sudo apt install cpuid"
-24. Create a test C file by putting required instructions.
-25. Install C compiler using "sudo apt install gcc".
-26. Complie  C file. Ex: gcc test.c
-27. Execute C file. Ex: ./a.out
-28. The exits and time spent is displayed.
+15. After reboot check kernel version using "uname -a", the kernel version is updated in my case it is updated to "5.14.3".
+16. Modify the cpuid.c file in "linux-5.14.3/arch/x86/kvm/" folder.
+17. Modify the vmx.c file in "linux-5.14.3/arch/x86/kvm/vmx/" folder.
+18. Follow steps 10-14 again. (new changes will added to kernel)
+19. Install virtual manager using command "sudo apt-get install virt-manager".
+20. I have setup Desktop for GCP instance, follow link to install Desktop server https://cloud.google.com/architecture/chrome-desktop-remote-on-compute-engine
+21. After installation connect to instance using chrome remote desktop https://remotedesktop.google.com/access/
+22. Download an ubunut ISO file from website, I downloaded ubuntu 20.04 ISO file
+23. Open Virtual Machine Manager.
+24. Create VM using downloaded ISO file.
+25. After creating VM, boot into VM.
+26. Install CPUID package using "sudo apt install cpuid"
+27. Create a test C file by putting required instructions.
+28. Install C compiler using "sudo apt install gcc".
+29. Complie  C file. Ex: gcc test.c
+30. Execute C file. Ex: ./a.out
+31. The exits and time spent is displayed.
 
 Screenshots
 1. Intial screenshot is taken eight after creating VM
