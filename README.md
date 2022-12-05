@@ -53,3 +53,12 @@ Tertiary Processor Based controls cannot be added, as the Can Set Flag is No in 
 26. Complie  C file. Ex: gcc test.c
 27. Execute C file. Ex: ./a.out
 28. The exits and time spent is displayed.
+
+Screenshots
+1. Intial screenshot is taken eight after creating VM
+<img width="797" alt="Initial_output" src="https://user-images.githubusercontent.com/99615170/205765189-6dda7958-a8aa-42f4-bd52-e99c4fa2f623.png">
+
+2. This screenshot is taken after keeping VM on for some hours
+<img width="1440" alt="output2" src="https://user-images.githubusercontent.com/99615170/205765277-39b2bee5-5be9-40d7-83dc-0ab4bbab6294.png">
+
+
