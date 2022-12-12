@@ -65,7 +65,7 @@ Screenshots
 <img width="1440" alt="output2" src="https://user-images.githubusercontent.com/99615170/205765277-39b2bee5-5be9-40d7-83dc-0ab4bbab6294.png">
 
 
-#Assignment 3
+# Assignment 3
 
 1.For each member in your team, provide 1 paragraph detailing what parts of the lab that member implemented / researched.
 
